@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            color: white !important;
+        }
+
+        #videoBackground {
+            position: fixed;
+            /* Use fixed positioning */
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            max-width: initial;
+            z-index: -1;
+            padding: 0;
+            margin: 0;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+
+<body class="bg-black">
+    <video autoplay muted loop id="videoBackground">
+        <source src="backgroundlavagreen.webm" type="video/webm">
+    </video>
+    <div class="flex flex-col align-center h-full">
+        <div class="flex flex-col grow justify-around">
+            <h1 class="text-6xl flex items-start justify-center p-4">
+                <span class="">Bestuursupdates</span>
+                <span class="text-3xl rounded-lg px-2 bg-gradient-to-b from-yellow-500 to-orange-500 shrink">mini</span>
+            </h1>
+            <div class="flex flex-col py-0 px-16 text-3xl justify-center">
+                <div class="border-solid p-4 w-3/5 flex gap-4">
+                    <div class="w-24 h-24 bg-cover bg-center"
+                        style="background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4bc8238a-57c9-470b-9cbf-f0ddda6065af/dervhse-5b9125c3-b334-4eda-89b1-5413cde374f0.png/v1/fill/w_791,h_1011/kiki_s_delivery_service___vector__3_jiji_the_cat_by_trulylimbogene_dervhse-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzQ3MCIsInBhdGgiOiJcL2ZcLzRiYzgyMzhhLTU3YzktNDcwYi05Y2JmLWYwZGRkYTYwNjVhZlwvZGVydmhzZS01YjkxMjVjMy1iMzM0LTRlZGEtODliMS01NDEzY2RlMzc0ZjAucG5nIiwid2lkdGgiOiI8PTI3MTQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.VPuTFHbT85X2bjDt6VZCoPkqQnmeOQhqoiHv2YQ18-c');">
+                    </div>
+                    <div>
+                        <p class="font-bold">Pascalle</p>
+                        <p>Voorzitgeluiden</p>
+                    </div>
+                </div>
+                <div class="border-solid p-4 w-3/5 flex gap-4 self-end text-right justify-end">
+                    <div>
+                        <p class="font-bold">Jordy</p>
+                        <p>Typgeluiden</p>
+                    </div>
+                    <div class="w-24 h-24 bg-cover bg-center"
+                        style="background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/69a285ad-7d02-43f5-ad1b-d1d34d294fb9/d3bqm4r-63f41315-5a62-4abf-a9e8-140234da72ed.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzY5YTI4NWFkLTdkMDItNDNmNS1hZDFiLWQxZDM0ZDI5NGZiOVwvZDNicW00ci02M2Y0MTMxNS01YTYyLTRhYmYtYTllOC0xNDAyMzRkYTcyZWQuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.R8PtQXGwBAQ_BESuTCgAAW1dKsILyOMauGuWCjsk9eY');">
+                    </div>
+                </div>
+                <div class="border-solid p-4 w-3/5 flex gap-4">
+                    <div class="w-24 h-24 bg-cover bg-center"
+                        style="background-image: url('https://i.pinimg.com/736x/5c/ec/5c/5cec5c3d746dee199d6dd08844c31742.jpg');">
+                    </div>
+                    <div>
+                        <p class="font-bold">Julian</p>
+                        <p>Verenigings-geldgeluiden</p>
+                    </div>
+                </div>
+                <div class="border-solid p-4 w-3/5 flex gap-4 self-end text-right justify-end">
+                    <div>
+                        <p class="font-bold">Aidan</p>
+                        <p>Sociëteits-geldgeluiden</p>
+                    </div>
+                    <div class="w-24 h-24 bg-cover bg-center"
+                        style="background-image: url('https://static.wikia.nocookie.net/zelda_gamepedia_en/images/4/4f/HW_Midna_Render.png/revision/latest?cb=20140611172044');">
+                    </div>
+                </div>
+                <div class="border-solid p-4 w-3/5 flex gap-4">
+                    <div class="w-24 h-24 bg-cover bg-center"
+                        style="background-image: url('https://static.wikia.nocookie.net/deathbattle/images/e/e9/Portrait.homuraakemi.png/revision/latest/thumbnail/width/360/height/450?cb=20220714031921');">
+                    </div>
+                    <div>
+                        <p class="font-bold">Gijs</p>
+                        <p>Internal screaming</p>
+                    </div>
+                </div>
+                <div class="border-solid p-4 w-3/5 flex gap-4 self-end text-right justify-end">
+                    <div>
+                        <p class="font-bold">Mano</p>
+                        <p>External screaming</p>
+                    </div>
+                    <div class="w-24 h-24 bg-cover bg-center"
+                        style="background-image: url('https://purepng.com/public/uploads/large/purepng.com-diana-classic-skin-splashartsplashartchampionleague-of-legendsskincorki-3315199242137fgrc.png');">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
