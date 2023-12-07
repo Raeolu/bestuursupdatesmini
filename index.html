@@ -39,7 +39,7 @@
             </h1>
             <div id="updated_at" class="text-2xl flex items-start justify-center"></div>
             <div class="flex flex-col py-0 px-16 text-3xl justify-center">
-                <div class="border-solid p-4 w-3/5 flex gap-4">
+                <div class="border-solid w-3/5 flex gap-4">
                     <div class="w-24 h-24 bg-cover bg-center"
                         style="background-image: url('pascalle.png');">
                     </div>
@@ -48,7 +48,7 @@
                         <p>Voorzitgeluiden</p>
                     </div>
                 </div>
-                <div class="border-solid p-4 w-3/5 flex gap-4 self-end text-right justify-end">
+                <div class="border-solid w-3/5 flex gap-4 self-end text-right justify-end">
                     <div>
                         <p class="font-bold">Jordy</p>
                         <p>Huilt in ALV notulen, ledenpasjes komen eraan!!! Ik ben bij met mailtjes ook? HUH</p>
@@ -57,7 +57,7 @@
                         style="background-image: url('jordy.jpg');">
                     </div>
                 </div>
-                <div class="border-solid p-4 w-3/5 flex gap-4">
+                <div class="border-solid w-3/5 flex gap-4">
                     <div class="w-24 h-24 bg-cover bg-center"
                         style="background-image: url('julian.jpg');">
                     </div>
@@ -66,7 +66,7 @@
                         <p>Working on inboeken en fysieke bonnen.</p>
                     </div>
                 </div>
-                <div class="border-solid p-4 w-3/5 flex gap-4 self-end text-right justify-end">
+                <div class="border-solid w-3/5 flex gap-4 self-end text-right justify-end">
                     <div>
                         <p class="font-bold">Aidan</p>
                         <p>Sociëteits-geldgeluiden</p>
@@ -75,7 +75,7 @@
                         style="background-image: url('aidan.png');">
                     </div>
                 </div>
-                <div class="border-solid p-4 w-3/5 flex gap-4">
+                <div class="border-solid w-3/5 flex gap-4">
                     <div class="w-24 h-24 bg-cover bg-center"
                         style="background-image: url('gijs.webp');">
                     </div>
@@ -84,7 +84,7 @@
                         <p>Internal screaming</p>
                     </div>
                 </div>
-                <div class="border-solid p-4 w-3/5 flex gap-4 self-end text-right justify-end">
+                <div class="border-solid w-3/5 flex gap-4 self-end text-right justify-end">
                     <div>
                         <p class="font-bold">Mano</p>
                         <p>External screaming</p>
@@ -98,7 +98,8 @@
     </div>
     <script>
         let updatedAtDiv = document.querySelector("#updated_at");
-        updatedAtDiv.innerText = Math.round((new Date() - new Date('2023-12-07T00:00:00')) / (1000 * 60 * 60 * 24)) + " dag(en) geleden geüpdatet";
+        let days = Math.round((new Date() - new Date('2023-12-07T19:00:00')) / (1000 * 60 * 60 * 24));
+        updatedAtDiv.innerText = (days === 0 ? "Vandaag" : days + " dag(en) geleden") + "geüpdatet";
     </script>
 </body>
 
