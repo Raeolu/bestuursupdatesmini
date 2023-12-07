@@ -33,11 +33,13 @@
     <div id="background"></div>
     <div class="flex flex-col align-center h-full">
         <div class="flex flex-col grow justify-around">
-            <h1 class="text-6xl flex items-start justify-center p-4">
-                <span class="">Bestuursupdates</span>
-                <span class="text-3xl rounded-lg px-2 bg-gradient-to-b from-yellow-500 to-orange-500 shrink">mini</span>
-            </h1>
-            <div id="updated_at" class="text-2xl flex items-start justify-center"></div>
+            <div>
+                <h1 class="text-6xl flex items-start justify-center p-4">
+                    <span class="">Bestuursupdates</span>
+                    <span class="text-3xl rounded-lg px-2 bg-gradient-to-b from-yellow-500 to-orange-500 shrink">mini</span>
+                </h1>
+                <div id="updated_at" class="text-2xl flex items-start justify-center"></div>
+            </div>
             <div class="flex flex-col py-0 px-16 text-3xl justify-center">
                 <div class="border-solid w-4/5 flex gap-4">
                     <div class="w-24 h-24 bg-cover bg-center"
@@ -99,7 +101,7 @@
     <script>
         let updatedAtDiv = document.querySelector("#updated_at");
         let days = Math.round((new Date() - new Date('2023-12-07T19:00:00')) / (1000 * 60 * 60 * 24));
-        updatedAtDiv.innerText = (days === 0 ? "Vandaag" : days + " dag(en) geleden") + "geüpdatet";
+        updatedAtDiv.innerText = (days === 0 ? "Vandaag " : days + " dag(en) geleden ") + "geüpdatet";
     </script>
 </body>
 
