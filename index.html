@@ -15,7 +15,6 @@
 
         #videoBackground {
             position: fixed;
-            /* Use fixed positioning */
             top: 0;
             left: 0;
             min-width: 100%;
@@ -25,14 +24,13 @@
             padding: 0;
             margin: 0;
             opacity: 0.5;
+            background: url("background.jpg");
         }
     </style>
 </head>
 
 <body class="bg-black">
-    <video autoplay muted loop id="videoBackground">
-        <source src="backgroundlavagreen.webm" type="video/webm">
-    </video>
+    <div id="background"></div>
     <div class="flex flex-col align-center h-full">
         <div class="flex flex-col grow justify-around">
             <h1 class="text-6xl flex items-start justify-center p-4">
