@@ -37,6 +37,7 @@
                 <span class="">Bestuursupdates</span>
                 <span class="text-3xl rounded-lg px-2 bg-gradient-to-b from-yellow-500 to-orange-500 shrink">mini</span>
             </h1>
+            <div id="updated_at" class="text-2xl flex items-start justify-center"></div>
             <div class="flex flex-col py-0 px-16 text-3xl justify-center">
                 <div class="border-solid p-4 w-3/5 flex gap-4">
                     <div class="w-24 h-24 bg-cover bg-center"
@@ -50,7 +51,7 @@
                 <div class="border-solid p-4 w-3/5 flex gap-4 self-end text-right justify-end">
                     <div>
                         <p class="font-bold">Jordy</p>
-                        <p>Typgeluiden</p>
+                        <p>Huilt in ALV notulen, ledenpasjes komen eraan!!! Ik ben bij met mailtjes ook? HUH</p>
                     </div>
                     <div class="w-24 h-24 bg-cover bg-center"
                         style="background-image: url('jordy.jpg');">
@@ -62,7 +63,7 @@
                     </div>
                     <div>
                         <p class="font-bold">Julian</p>
-                        <p>Verenigings-geldgeluiden</p>
+                        <p>Working on inboeken en fysieke bonnen.</p>
                     </div>
                 </div>
                 <div class="border-solid p-4 w-3/5 flex gap-4 self-end text-right justify-end">
@@ -95,6 +96,10 @@
             </div>
         </div>
     </div>
+    <script>
+        let updatedAtDiv = document.querySelector("#updated_at");
+        updatedAtDiv.innerText = Math.round((new Date() - new Date('2023-12-07T00:00:00')) / (1000 * 60 * 60 * 24)) + " dag(en) geleden geüpdatet";
+    </script>
 </body>
 
 </html>
